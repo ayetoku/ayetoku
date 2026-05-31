@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #09090b;
-  --foreground: #fafafa;
+  --background: #f3ebe1;
+  --foreground: #5c3d22;
 }
 
 @theme inline {
@@ -42,4 +42,38 @@ button {
 
 .ayet-giris {
   animation: ayet-giris 0.5s ease-out both;
+}
+
+@keyframes ayet-yenile {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ayet-yenile {
+  animation: ayet-yenile 0.4s ease-out both;
+}
+
+@keyframes karsilama-giris {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.karsilama-giris {
+  animation: karsilama-giris 0.6s ease-out both;
+}
+
+.font-serif {
+  font-family: var(--font-serif), "Times New Roman", serif;
 }

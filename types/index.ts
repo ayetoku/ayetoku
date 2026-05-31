@@ -1,3 +1,5 @@
+import { DUYGU_ETIKETLERI } from "@/constants/duygular";
+
 export interface Ayet {
   id: number;
   sure_adi: string;
@@ -20,3 +22,9 @@ export interface GeriBildirimKaydi {
   yanit: GeriBildirimYanit;
   tarih: string;
 }
+
+/** ayetler.json satır yapısı — yeni ayet eklerken buna uy */
+export type AyetSablonu = Ayet;
+
+/** Geçerli duygu slug'ları — ayetler.json `duygular` alanında bunları kullan */
+export { DUYGU_ETIKETLERI };

@@ -1,0 +1,11 @@
+{
+  "id": 0,
+  "sure_adi": "Sure adi",
+  "ayet_no": 0,
+  "arapca": "Arapca metin",
+  "meal": "Turkce meal",
+  "meal_kaynagi": "Diyanet Isleri Baskanligi",
+  "duygular": ["mutlu", "umutlu", "minnettar", "huzurlu"],
+  "baglam": ["istege_bagli_etiket"],
+  "tefekkur_notu": "Kisa tefekkur notu."
+}

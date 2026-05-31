@@ -6,7 +6,7 @@
     "arapca": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
     "meal": "Rahman ve Rahim olan Allah'ın adıyla.",
     "meal_kaynagi": "Diyanet İşleri Başkanlığı",
-    "duygular": ["huzur", "teslimiyet"],
+    "duygular": ["huzur", "huzurlu", "mutlu", "teslimiyet"],
     "baglam": ["baslangic", "dua"],
     "tefekkur_notu": "Her işe Allah'ın adıyla başlamak, günün akışını O'na emanet etmek anlamına gelir."
   },
@@ -17,7 +17,7 @@
     "arapca": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
     "meal": "Allah hiç kimseye gücünün yettiğinden fazlasını yüklemez.",
     "meal_kaynagi": "Diyanet İşleri Başkanlığı",
-    "duygular": ["kaygi", "huzur", "umut"],
+    "duygular": ["kaygi", "huzur", "umut", "umutlu"],
     "baglam": ["sorumluluk", "imtihan"],
     "tefekkur_notu": "Taşıyamayacağın yükün sorumluluğu sende değildir; yapabildiğin kadarı yeterlidir."
   },
@@ -28,7 +28,18 @@
     "arapca": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
     "meal": "Bilin ki kalpler, ancak Allah'ı anmakla huzur bulur.",
     "meal_kaynagi": "Diyanet İşleri Başkanlığı",
-    "duygular": ["huzur", "sukunet"],
+    "duygular": ["huzur", "huzurlu", "sukunet"],
     "tefekkur_notu": "Kalbin dağınık hissettiği anlarda Allah'ı anmak, içsel dinginliğe açılan bir kapıdır."
+  },
+  {
+    "id": 4,
+    "sure_adi": "Ibrahim",
+    "ayet_no": 7,
+    "arapca": "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ",
+    "meal": "And olsun, eğer şükrederseniz elbette size (nimetimi) artırırım.",
+    "meal_kaynagi": "Diyanet İşleri Başkanlığı",
+    "duygular": ["minnettar", "sukran", "mutlu"],
+    "baglam": ["sukur", "nimet"],
+    "tefekkur_notu": "Minnettarlık, elindekini görmeni ve kalbini genişletmeni sağlar."
   }
 ]

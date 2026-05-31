@@ -1,44 +1,95 @@
+"use client";
+
 import { GeriBildirim } from "@/components/GeriBildirim";
+import { TEMA } from "@/constants/tema";
 import type { Ayet } from "@/types";
 
 interface AyetKartiProps {
   ayet: Ayet;
   duyguSlug: string;
   duyguLabel: string;
+  yenilenebilir: boolean;
   onBack: () => void;
+  onYenile: () => void;
 }
 
-export function AyetKarti({ ayet, duyguSlug, duyguLabel, onBack }: AyetKartiProps) {
+function YenileIkonu() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5"
+      aria-hidden="true"
+    >
+      <path d="M21 12a9 9 0 1 1-2.64-6.36" />
+      <path d="M21 3v6h-6" />
+    </svg>
+  );
+}
+
+export function AyetKarti({
+  ayet,
+  duyguSlug,
+  duyguLabel,
+  yenilenebilir,
+  onBack,
+  onYenile,
+}: AyetKartiProps) {
   return (
     <div className="ayet-giris">
       <button
         type="button"
         onClick={onBack}
-        className="-ml-2 mb-5 inline-flex min-h-11 items-center rounded-lg px-2 text-sm font-medium text-zinc-500 transition-colors hover:text-zinc-300 active:text-zinc-200"
+        className={`-ml-2 mb-5 inline-flex min-h-11 items-center rounded-lg px-2 text-sm font-medium transition-colors ${TEMA.geriLink}`}
       >
         ← Geri
       </button>
 
-      <article className="rounded-2xl border border-zinc-800 bg-zinc-900/70 px-4 py-6 sm:px-6 sm:py-8">
-        <p
-          dir="rtl"
-          lang="ar"
-          className="text-balance text-center text-xl leading-[1.9] break-words text-zinc-50 sm:text-2xl sm:leading-loose"
+      <article
+        className={`relative rounded-2xl border px-4 py-6 sm:px-6 sm:py-8 ${TEMA.kart}`}
+      >
+        {yenilenebilir && (
+          <button
+            type="button"
+            onClick={onYenile}
+            aria-label="Başka bir ayet göster"
+            className={`absolute top-3 right-3 flex h-10 w-10 items-center justify-center rounded-xl border transition-colors ${TEMA.ikincilButon}`}
+          >
+            <YenileIkonu />
+          </button>
+        )}
+
+        <div
+          key={ayet.id}
+          className={`ayet-yenile ${yenilenebilir ? "pt-8 sm:pt-4" : ""}`}
         >
-          {ayet.arapca}
-        </p>
-
-        <p className="mt-6 text-balance text-center text-base leading-relaxed break-words text-zinc-200 sm:mt-8 sm:text-lg">
-          {ayet.meal}
-        </p>
-
-        <div className="mt-6 space-y-3 border-t border-zinc-800 pt-5 sm:mt-8 sm:pt-6">
-          <p className="text-balance text-xs leading-relaxed text-zinc-500">
-            {ayet.meal_kaynagi}
+          <p
+            dir="rtl"
+            lang="ar"
+            className={`text-balance text-center text-xl leading-[1.9] break-words sm:text-2xl sm:leading-loose ${TEMA.baslik}`}
+          >
+            {ayet.arapca}
           </p>
-          <p className="text-balance text-sm leading-relaxed break-words text-zinc-400">
-            {ayet.tefekkur_notu}
+
+          <p
+            className={`mt-6 text-balance text-center text-base leading-relaxed break-words sm:mt-8 sm:text-lg ${TEMA.altMetin}`}
+          >
+            {ayet.meal}
           </p>
+
+          <div className={`mt-6 space-y-3 border-t pt-5 sm:mt-8 sm:pt-6 ${TEMA.ayirici}`}>
+            <p className={`text-balance text-xs leading-relaxed ${TEMA.solukMetin}`}>
+              {ayet.meal_kaynagi}
+            </p>
+            <p className={`text-balance text-sm leading-relaxed break-words ${TEMA.altMetin}`}>
+              {ayet.tefekkur_notu}
+            </p>
+          </div>
         </div>
       </article>
 
