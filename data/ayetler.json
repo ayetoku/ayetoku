@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "sure_adi": "Fatiha",
+    "ayet_no": 1,
+    "arapca": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+    "meal": "Rahman ve Rahim olan Allah'ın adıyla.",
+    "meal_kaynagi": "Diyanet İşleri Başkanlığı",
+    "duygular": ["huzur", "teslimiyet"],
+    "baglam": ["baslangic", "dua"],
+    "tefekkur_notu": "Her işe Allah'ın adıyla başlamak, günün akışını O'na emanet etmek anlamına gelir."
+  },
+  {
+    "id": 2,
+    "sure_adi": "Bakara",
+    "ayet_no": 286,
+    "arapca": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+    "meal": "Allah hiç kimseye gücünün yettiğinden fazlasını yüklemez.",
+    "meal_kaynagi": "Diyanet İşleri Başkanlığı",
+    "duygular": ["kaygi", "huzur", "umut"],
+    "baglam": ["sorumluluk", "imtihan"],
+    "tefekkur_notu": "Taşıyamayacağın yükün sorumluluğu sende değildir; yapabildiğin kadarı yeterlidir."
+  },
+  {
+    "id": 3,
+    "sure_adi": "Ra'd",
+    "ayet_no": 28,
+    "arapca": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+    "meal": "Bilin ki kalpler, ancak Allah'ı anmakla huzur bulur.",
+    "meal_kaynagi": "Diyanet İşleri Başkanlığı",
+    "duygular": ["huzur", "sukunet"],
+    "tefekkur_notu": "Kalbin dağınık hissettiği anlarda Allah'ı anmak, içsel dinginliğe açılan bir kapıdır."
+  }
+]
