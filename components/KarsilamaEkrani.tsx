@@ -1,4 +1,5 @@
 import type { Ayet } from "@/types";
+import { FavorilerLink } from "@/components/FavorilerLink";
 
 interface KarsilamaEkraniProps {
   gununAyet: Ayet;
@@ -27,6 +28,10 @@ function KitapIkonu() {
 export function KarsilamaEkrani({ gununAyet, onBasla }: KarsilamaEkraniProps) {
   return (
     <div className="karsilama-giris flex w-full flex-col items-center text-center">
+      <div className="mb-1 flex w-full justify-end">
+        <FavorilerLink />
+      </div>
+
       <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#C98A4B]/25 bg-[#C98A4B]/10 text-[#C98A4B]">
         <KitapIkonu />
       </div>
